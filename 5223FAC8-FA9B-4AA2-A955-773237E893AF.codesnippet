@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Request Network</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>JLNetRequest *request = [JLNetRequest new];
+request.interface = kURL_GetInviteDetail;
+
+NSMutableDictionary *params = [NSMutableDictionary new];
+
+JLUserManager *manager = [JLUserManager shareInstance];
+
+[params setObject:manager.currentBaby.babyId forKey:@"baby_id"];
+
+request.parameters = params;
+
+[[JLNetworkEngine shareInstance] sendRequest:request completeHandle:^(JLNetResponse *response, NSError *error) {
+    
+    if (response &amp;&amp; response.retCode == 0) {
+        
+        JLInviteInfoModel *model = [JLInviteInfoModel objectWithKeyValues:response.data];
+        JLFamilyInviteView *inviteView = (JLFamilyInviteView *)self.view;
+        inviteView.model = model;
+        [self hideHUD];
+        
+    } else {
+        [self showTipsHUDWithTitle:response.retMsg type:JLHUDTipTypeError];
+    }
+    
+}];
+
+[self showTipsHUDWithTitle:@"加载中..." type:JLHUDTipTypeLoading];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5223FAC8-FA9B-4AA2-A955-773237E893AF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Request</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Request</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
