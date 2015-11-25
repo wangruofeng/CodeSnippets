@@ -10,32 +10,22 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>JLNetRequest *request = [JLNetRequest new];
-request.interface = kURL_GetInviteDetail;
+request.interface = kURL_Resgister_User;
 
 NSMutableDictionary *params = [NSMutableDictionary new];
 
-JLUserManager *manager = [JLUserManager shareInstance];
-
-[params setObject:manager.currentBaby.babyId forKey:@"baby_id"];
 
 request.parameters = params;
-
-[[JLNetworkEngine shareInstance] sendRequest:request completeHandle:^(JLNetResponse *response, NSError *error) {
+[[JLNetworkEngine shareInstance] sendRequest:request identifier:kURL_Resgister_User completeHandle:^(JLNetResponse *response, JLNetworkErrorModel *errModel) {
     
-    if (response &amp;&amp; response.retCode == 0) {
-        
-        JLInviteInfoModel *model = [JLInviteInfoModel objectWithKeyValues:response.data];
-        JLFamilyInviteView *inviteView = (JLFamilyInviteView *)self.view;
-        inviteView.model = model;
-        [self hideHUD];
+    if (!errModel) {
         
     } else {
-        [self showTipsHUDWithTitle:response.retMsg type:JLHUDTipTypeError];
+        [self showTipsHUDWithErrorModel:errModel];
     }
-    
 }];
 
-[self showTipsHUDWithTitle:@"加载中..." type:JLHUDTipTypeLoading];</string>
+[self showProgressHUDInSelfWithTitle:@""];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5223FAC8-FA9B-4AA2-A955-773237E893AF</string>
 	<key>IDECodeSnippetLanguage</key>

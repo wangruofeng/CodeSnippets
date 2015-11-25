@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>fori</string>
+	<string>Annotation3</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for (int i = 0; i &lt; &lt;#number#&gt;; i++) {
-        &lt;#statements#&gt;
-    }</string>
+	<string>/****************	&lt;#name#&gt;	****************/</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B8E2016E-A8B1-47AE-A294-C551F5387677</string>
+	<string>FA02D457-3E61-47ED-BDFF-52265FC2CCCC</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>for...i</string>
+	<string>quick  create an annotaion</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>for...i</string>
+	<string>/*******************/</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
