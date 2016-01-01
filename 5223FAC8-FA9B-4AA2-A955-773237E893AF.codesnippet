@@ -9,16 +9,25 @@
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>JLNetRequest *request = [JLNetRequest new];
-request.interface = kURL_Resgister_User;
+	<string>NSMutableDictionary *params = [NSMutableDictionary dictionary];
 
-NSMutableDictionary *params = [NSMutableDictionary new];
+JLNetRequest *request = [JLNetRequest new];
+request.interface     = kURL_Get_Lock_List;
+request.parameters    = params;
+request.requestType   = JLHTTPRequestTypeGet;
 
-
-request.parameters = params;
-[[JLNetworkEngine shareInstance] sendRequest:request identifier:kURL_Resgister_User completeHandle:^(JLNetResponse *response, JLNetworkErrorModel *errModel) {
+[[JLNetworkEngine shareInstance] sendRequest:request identifier:kURL_Get_Lock_List completeHandle:^(JLNetResponse *response, JLNetworkErrorModel *errModel) {
     
     if (!errModel) {
+        
+        [self hideHUD];
+        
+        //            RFSkyLockListModel *skyLockListMode =  [RFSkyLockListModel objectWithKeyValues:response.data];
+        //            self.listModel = skyLockListMode;
+        
+        [self.tableView reloadData];
+        
+        //            NSLog(@"%@",skyLockListMode);
         
     } else {
         [self showTipsHUDWithErrorModel:errModel];
