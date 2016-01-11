@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>Log...</string>
+	<string>Log.</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"&lt;#code#&gt;",&lt;#content#&gt;);</string>
+	<string>NSLog(@"%s",&lt;#code#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0638C92F-53C0-44FB-BD52-56C35D2816B3</string>
+	<string>94B46CC8-3925-49E3-8C60-5069F130A000</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSLog(@"&lt;#code#&gt;",&lt;#content#&gt;);</string>
+	<string>NSLog(@"%s",&lt;#code#&gt;);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Log...</string>
+	<string>Log. %s</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

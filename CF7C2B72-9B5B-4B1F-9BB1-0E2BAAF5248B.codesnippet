@@ -2,25 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>Log...</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"&lt;#code#&gt;",&lt;#content#&gt;);</string>
+	<string>NSLog(@"%s",&lt;#code#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0638C92F-53C0-44FB-BD52-56C35D2816B3</string>
+	<string>CF7C2B72-9B5B-4B1F-9BB1-0E2BAAF5248B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>NSLog(@"&lt;#code#&gt;",&lt;#content#&gt;);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Log...</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
