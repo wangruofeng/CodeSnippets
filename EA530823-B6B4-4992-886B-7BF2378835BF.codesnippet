@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>UIControl</string>
+	<string>TouchUpInside</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
@@ -16,6 +16,8 @@
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>quick input UIControlEventTouchUpInside</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UIControlEventTouchUpInside</string>
 	<key>IDECodeSnippetUserSnippet</key>

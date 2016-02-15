@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSLog(@"frame:%@",NSStringFromCGRect(&lt;#CGRect rect#&gt;));</string>
+	<string>quick log some  NSString from a given CGRect</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSLog Frame</string>
+	<string>Log Frame Str</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

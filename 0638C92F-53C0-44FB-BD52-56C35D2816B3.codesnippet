@@ -15,7 +15,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSLog(@"&lt;#code#&gt;",&lt;#content#&gt;);</string>
+	<string>quick log some (@"code", content) formated code</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Log...</string>
 	<key>IDECodeSnippetUserSnippet</key>
