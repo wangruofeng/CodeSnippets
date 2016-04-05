@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>- (&lt;#type#&gt; *)&lt;#name#&gt;{
     if (!_&lt;#name#&gt;) {
-        self.&lt;#name#&gt; = [&lt;#type#&gt; new];
+        _&lt;#name#&gt; = [&lt;#type#&gt; new];
     }
     return _&lt;#name#&gt;;
 }</string>

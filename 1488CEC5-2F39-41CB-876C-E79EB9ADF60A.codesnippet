@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>KLLocalString</string>
+	<string>Log</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[KLLocaleUtils localizedString:@"&lt;#str#&gt;"]</string>
+	<string> NSLog(@"%@ file:%@ line:%d",&lt;#code#&gt;,[[NSString stringWithUTF8String:__FILE__] lastPathComponent],__LINE__);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A75E029C-C08B-4DAD-90FF-C10DD2D12207</string>
+	<string>1488CEC5-2F39-41CB-876C-E79EB9ADF60A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>quick create a KLLocalString</string>
+	<string>quick log some (@"%@ file:%@ line:%d) formated code</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>KLLocalString</string>
+	<string>Log_file_line</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
