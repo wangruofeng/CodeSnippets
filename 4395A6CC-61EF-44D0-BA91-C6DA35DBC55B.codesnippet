@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>API</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> KLGetBraintreeCreditCardsAPI *api = [KLGetBraintreeCreditCardsAPI new];
+    
+    api.successCompletionBlock = ^(KLBaseRequest *request){
+        
+        [self handleResponse:request.responseJSONObject success:^(id resultDict) {
+            
+            if ([self.delegate respondsToSelector:@selector(apiClient:didUpdateCreditCards:)]) {
+                NSArray *creditDicts = [resultDict objectForKey:@"credit_cards"];
+                NSArray *creditCards = [MTLJSONAdapter modelsOfClass:[KLCreditCard class] fromJSONArray:creditDicts error:nil];
+                [self.delegate apiClient:self didUpdateCreditCards:creditCards];
+            }
+            
+        } fail:nil];
+        
+    };
+    
+    api.failureCompletionBlock = ^(KLBaseRequest *request){
+        [self handleReqest:request error:request.error];
+    };
+    
+    [KLNetworkAgent addRequestToAgent:api];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4395A6CC-61EF-44D0-BA91-C6DA35DBC55B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Quik create a api</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Quik create a api</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
